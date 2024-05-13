@@ -13,7 +13,7 @@ a = int(input("請輸入邊長1:"));
 b = int(input("請輸入邊長2:"));
 c = int(input("請輸入邊長3:"));
 
-if((a+b)>=c or (a+c)>=b or (c+b)>=a):
+if((a+b)>=c and (a+c)>=b and (c+b)>=a):
     print("可構成三角形");
     if((a*a)+(b*b)==(c*c) or (a*a)+(c*c)==(b*b) or (b*b)+(c*c)==(a*a)):
         print("可構成直角三角形");
