@@ -8,6 +8,7 @@ Created on Mon May 13 09:29:42 2024
 亂數產生5~100之間可以被五整除的數，產生五個且不可重複
 nu請用五個變數去儲存
 """
+'''
 import random;
 
 num1 = 0;
@@ -38,3 +39,11 @@ for i in range(1,1000):
         else:
          break;
 print("第一個數=",num1," 第二個數=",num2," 第三個數=",num3," 第四個數=",num4," 第五個數=",num5,sep="");
+'''
+import random;
+number = list();
+while (len(number) !=5):
+    n=random.randrange(5,101,5);
+    if(number.count(n) == 0):
+        number.append(n);
+print(number);
